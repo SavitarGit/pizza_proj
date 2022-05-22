@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+}
+
+
+body {
+    color: #232323
+}
+
+
+a {
+    text-decoration: none
+}
+
+.header {
+    border-bottom: 1px solid #eeecec;
+    padding: 40px 0
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header__logo {
+    display: flex
+}
+
+.header__logo img {
+    margin-right: 15px
+}
+
+.header__logo h1 {
+    color: #181818;
+    font-size: 24px;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    font-weight: 800
+}
+
+.header__logo p {
+    color: #7b7b7b
+}
+
+.button {
+    display: inline-block;
+    background-color: #fe5f1e;
+    border-radius: 30px;
+    padding: 10px 20px;
+    min-width: 70px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+    border: 1px solid transparent;
+    user-select: none
+}
+
+.button, .button span {
+    color: #fff
+}
+
+.button i, .button span, .button path, .button svg {
+    transition: all .15s ease-in-out
+}
+
+.button:hover {
+    background-color: #f24701
+}
+
+.button:active {
+    background-color: #de4101;
+    transform: translateY(1px)
+}
+
+
+.button--black {
+    background-color: #232323
+}
+
+.button--black:hover, .button--black:active {
+    background-color: #3d3d3d
+}
+
+.button--outline {
+    background-color: #fff;
+    border-color: #fe5f1e
+}
+
+.button--outline, .button--outline span {
+    color: #fe5f1e
+}
+
+.button--outline svg path {
+    fill: #fe5f1e
+}
+
+.button--outline:hover {
+    background-color: #fe5f1e
+}
+
+.button--outline:hover, .button--outline:hover span {
+    color: #fff
+}
+
+.button--outline:hover svg path {
+    fill: #fff
+}
+
+.button--outline:active {
+    background-color: #f24701
+}
+
+.button__delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: 14px;
+    margin-right: 14px
+}
+
+.button--add svg {
+    margin-right: 2px
+}
+
+.button--add span {
+    font-weight: 600;
+    font-size: 16px
+}
+
+.button--add:hover i {
+    background-color: #fff;
+    color: #fe5f1e
+}
+
+
+.button--cart {
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    padding: 12px 25px
+}
+
+.button--cart svg {
+    margin-right: 8px;
+    margin-bottom: 1px
+}
+
+.button--cart span {
+    font-weight: 600;
+    font-size: 16px
+}
+
+
+.pizza-block {
+    width: 280px;
+    text-align: center;
+}
+
+
+
+.pizza-block__image {
+    width: 260px
+}
+
+.pizza-block__title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 20px
+}
+
+.pizza-block__selector {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px
+}
+
+.pizza-block__selector ul {
+    display: flex;
+    flex: 1
+}
+
+.pizza-block__selector ul:first-of-type {
+    margin-bottom: 6px
+}
+
+.pizza-block__selector ul li {
+    padding: 8px;
+    flex: 1;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    user-select: none
+}
+
+.pizza-block__selector ul li.active {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    cursor: auto
+}
+
+.pizza-block__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+.pizza-block__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em
+}
+
+body {
+    background-color: #ffffff
+}
+
+.wrapper {
+    width: calc(100vw - 100px);
+    height: 100%;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 1400px
+}
+
+.content {
+    padding: 40px 0
+}
+
+.content__title {
+    margin: 35px 0
+}
+
+.content__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.content__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 555px;
+    justify-items: center;
+    width: 90%;
+    margin: 0 auto
+}
