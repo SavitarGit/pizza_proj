@@ -21,7 +21,7 @@
               </div>
 
               <div class="header__cart">
-                <a href="#" class="button button--cart">
+                <a href="#" class="button button--cart" onclick="openNav()">
                   <span>0 ₽</span>
                   <div class="button__delimiter"></div>
                   <span>0</span>
@@ -33,7 +33,7 @@
       <div class="content"> 
             <div class="container">
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="01">
 
                     <img class="pizza-block__image" src="img/pizza/margarita.jpeg" alt="Pizza"/>
 
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="02">
 
                     <img class="pizza-block__image" src="img/pizza/meat.jpeg" alt="Pizza"/>
 
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="03">
                     <img class="pizza-block__image" src="img/pizza/assorted.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Ассорти</h4>
@@ -104,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="04">
 
                     <img class="pizza-block__image" src="img/pizza/pepperoni.jpeg" alt="Pizza"/>
 
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="05">
 
                     <img class="pizza-block__image" src="img/pizza/ham-mushrooms.jpeg" alt="Pizza"/>
 
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="06">
 
                     <img class="pizza-block__image" src="img/pizza/pesto.jpeg" alt="Pizza"/>
 
@@ -176,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="07">
 
                     <img class="pizza-block__image" src="img/pizza/cheese.jpeg" alt="Pizza"/>
 
@@ -200,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="08">
 
                     <img class="pizza-block__image" src="img/pizza/four-cheeses.jpeg" alt="Pizza"/>
 
@@ -224,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="09">
                     <img class="pizza-block__image" src="img/pizza/carbonara.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Карбонара</h4>
@@ -247,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="pizza-block">
+                <div class="pizza-block" data-id="10">
                     <img class="pizza-block__image" src="img/pizza/homemade.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Домашняя</h4>
@@ -273,5 +273,26 @@
             </div>
       </div>
     </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="cart-block">
+            <h5 class="pizza-block__title">Ваш заказ</h4>
+                <div data-cart-empty class="cart-empty" role="alert">
+                    Корзина пуста
+                </div>
+
+                <div class="cart-total">
+                    <p><span class="delivery">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
+                    <p><span class="total">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
+                </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/cart.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>
