@@ -452,12 +452,14 @@ input {
 }
 
 .button_order {
-    background-color: #e7f62e;
-    color: black;
+    background-color: rgba(187, 183, 183, 0);
+    color: #ffffff;
+    border: 1px solid white;
 }
 
 .button_order:hover {
-    background-color: #fd7b32;
+    background-color: #555252;
+    border: 1px solid #555252;
     color: white;
 }
 
