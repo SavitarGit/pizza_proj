@@ -22,9 +22,9 @@
 
               <div class="header__cart">
                 <a href="#" class="button button--cart" onclick="openNav()">
-                  <span>0 ₽</span>
+                  <p><span class="total-price">0 </span> <span> ₽</span></p>
                   <div class="button__delimiter"></div>
-                  <span>0</span>
+                  <span class="total-elem">0</span>
                 </a>
               </div>
             </div>
@@ -33,31 +33,30 @@
       <div class="content"> 
             <div class="container">
 
-                <div class="pizza-block" data-id="01">
+                <div class="card pizza-block" data-id="01">
 
                     <img class="pizza-block__image" src="img/pizza/margarita.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Маргарита</h4>
 
                     <div class="pizza-block__selector">
-                      <ul>
-                          <li class="active">25 см.</li>
-                          <li>30 см.</li>
-                          <li>35 см.</li>
+                      <ul id="size_selector">
+                          <li class="size active">25 см.</li>
+                          <li class="size">30 см.</li>
+                          <li class="size">35 см.</li>
                       </ul>
                     </div>
 
                     <div class="pizza-block__bottom">
                       <div class="pizza-block__price">370 ₽</div>
 
-                      <div class="button button--outline button--add">
-                          <!-- <svg></svg> -->
-                          <span>В корзину</span>
+                      <div data-cart class="button button--outline button--add">
+                          <span data-cart>В корзину</span>
                       </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="02">
+                <div class="card pizza-block" data-id="02">
 
                     <img class="pizza-block__image" src="img/pizza/meat.jpeg" alt="Pizza"/>
 
@@ -74,14 +73,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">400 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="03">
+                <div class="card pizza-block" data-id="03">
                     <img class="pizza-block__image" src="img/pizza/assorted.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Ассорти</h4>
@@ -97,14 +95,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">420 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="04">
+                <div class="card pizza-block" data-id="04">
 
                     <img class="pizza-block__image" src="img/pizza/pepperoni.jpeg" alt="Pizza"/>
 
@@ -121,14 +118,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">475 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="05">
+                <div class="card pizza-block" data-id="05">
 
                     <img class="pizza-block__image" src="img/pizza/ham-mushrooms.jpeg" alt="Pizza"/>
 
@@ -145,14 +141,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">450 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="06">
+                <div class="card pizza-block" data-id="06">
 
                     <img class="pizza-block__image" src="img/pizza/pesto.jpeg" alt="Pizza"/>
 
@@ -169,14 +164,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">395 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="07">
+                <div class="card pizza-block" data-id="07">
 
                     <img class="pizza-block__image" src="img/pizza/cheese.jpeg" alt="Pizza"/>
 
@@ -193,14 +187,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price"> 300 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="08">
+                <div class="card pizza-block" data-id="08">
 
                     <img class="pizza-block__image" src="img/pizza/four-cheeses.jpeg" alt="Pizza"/>
 
@@ -217,14 +210,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">350 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="09">
+                <div class="card pizza-block" data-id="09">
                     <img class="pizza-block__image" src="img/pizza/carbonara.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Карбонара</h4>
@@ -240,14 +232,13 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">495 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pizza-block" data-id="10">
+                <div class="card pizza-block" data-id="10">
                     <img class="pizza-block__image" src="img/pizza/homemade.jpeg" alt="Pizza"/>
 
                     <h4 class="pizza-block__title">Домашняя</h4>
@@ -263,9 +254,8 @@
                     <div class="pizza-block__bottom">
                         <div class="pizza-block__price">425 ₽</div>
 
-                        <div class="button button--outline button--add">
-                            <!-- <svg></svg> -->
-                            <span>В корзину</span>
+                        <div data-cart class="button button--outline button--add">
+                            <span data-cart>В корзину</span>
                         </div>
                     </div>
                 </div>
@@ -273,6 +263,7 @@
             </div>
       </div>
     </div>
+
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -282,17 +273,31 @@
                     Корзина пуста
                 </div>
 
+                <div class="cart-wrapper">
+
+                </div>
+
                 <div class="cart-total">
                     <p><span class="delivery">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
                     <p><span class="total">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
                 </div>
         </div>
+
+        <div id="order-form" class="card-body border-top">
+            <h5 class="card-title">Оформить заказ</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </form>
+        </div>
     </div>
 
 
-
-
-    <script src="js/cart.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/totalCart.js"></script>
+    <script src="js/ifCartIsEmpty.js"></script>
 </body>
 </html>
