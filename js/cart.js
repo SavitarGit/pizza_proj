@@ -42,7 +42,7 @@ window.addEventListener('click', function (event) {
 										<div class="cart-item__details">
 
 											<div class="price">
-												<div class="pizza-block__price">${productInfo.price}</div>
+												<div class="pizza-block__price cart-block__price">${productInfo.price}</div>
 											</div>
 
 										</div>
